@@ -1,3 +1,22 @@
-<p>
-  cocktails-list works!
-</p>
+<h3>KC Womenin Tech</h3>
+<p>presents</p>
+<h1>Coding & Cocktails</h1>
+<ul class="cocktails">
+  <li *ngFor="let cocktail of cocktails"
+    [class.selected]="cocktail === selectedCocktail"
+    (click)="onSelect(cocktail)">
+    <span class="badge">{{cocktail.id}}</span> {{cocktail.name}}
+  </li>
+</ul>
+ 
+<div *ngIf="selectedCocktail">
+ 
+  <h2>{{selectedCocktail.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{selectedCocktail.id}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="selectedCocktail.name" placeholder="name">
+    </label>
+  </div>
+ 
+</div>
