@@ -1,8 +1,0 @@
-<div *ngIf="messageService.messages.length">
-
-  <h2><i class="fas fa-cocktail"></i> Grab a cocktail!</h2>
-  <button class="clear"
-          (click)="messageService.clear()">Cheers!</button>
-  <div *ngFor='let message of messageService.messages'> {{message}} </div>
-
-</div>
