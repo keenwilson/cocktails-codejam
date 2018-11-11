@@ -1,4 +1,32 @@
-# CocktailsCodejam
+# Coding & Cocktails 2018 CodeJam!
+
+
+For Coding & Cocktails 2018 CodeJam!, our team built our own `Angular Single Page Application` using `Angular CLI` that we have learned from Coding & Cocktails' October session -- Introduction to Single Page Applications (SPAs). 
+
+Our team of four created a web that showcasing cocktail options for attendees to choose a drink.
+
+---
+## Technologies used
+* `Angular`
+* `HTML`
+* `CSS`
+* `TypeScript`
+* `Git`
+
+---
+## Demo
+![Demo](./screenshots/codejam-cocktails.gif)
+The user can click cocktail options to display ingredients list.
+
+
+---
+## Author
+* [Amy Norris](https://twitter.com/AmyNorris?lang=en), _Team Mentor_
+* [Callie Hart](https://calliehart.github.io/), _Developer_
+* [Keen Wilson](https://keenwilson.com/), _Developer_
+* [Melissa Waltner](http://suitemel.com/), _Developer_
+---
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.5.
 
 ## Development server
