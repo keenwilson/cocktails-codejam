@@ -1,6 +1,7 @@
 <h3>KC Womenin Tech</h3>
 <p>presents</p>
 <h1>Coding & Cocktails</h1>
+<<<<<<< HEAD
 <div class="cocktail-list">
 
   <ul>
@@ -11,6 +12,17 @@
   </ul>
 </div>
 
+=======
+<app-message></app-message>
+<ul class="cocktails">
+  <li *ngFor="let cocktail of cocktails"
+    [class.selected]="cocktail === selectedCocktail"
+    (click)="onSelect(cocktail)">
+    <span class="badge">{{cocktail.id}}</span> {{cocktail.name}}
+  </li>
+</ul>
+ 
+>>>>>>> 542bf04247a34459a328bda08dfbb2d864031c16
 <div *ngIf="selectedCocktail">
 
   <h2>{{selectedCocktail.name | uppercase}} Details</h2>
