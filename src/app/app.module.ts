@@ -5,10 +5,6 @@ import { AppComponent } from './app.component';
 import { CocktailsListComponent } from './cocktails-list/cocktails-list.component';
 import { HeaderComponent } from './header/header.component';
 import { AboutComponent } from './about/about.component';
-<<<<<<< HEAD
-
-=======
->>>>>>> 2ee984de95bd5fcb2587080da47464257795e235
 
 @NgModule({
   declarations: [
