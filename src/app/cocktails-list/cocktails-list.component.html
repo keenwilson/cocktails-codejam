@@ -1,23 +1,26 @@
 <h3>KC Womenin Tech</h3>
 <p>presents</p>
 <h1>Coding & Cocktails</h1>
-<app-message></app-message>
-<ul class="cocktails">
-  <li *ngFor="let cocktail of cocktails"
-    [class.selected]="cocktail === selectedCocktail"
-    (click)="onSelect(cocktail)">
-    <span class="badge">{{cocktail.id}}</span> {{cocktail.name}}
-  </li>
-</ul>
- 
-<div *ngIf="selectedCocktail">
- 
+<div class="cocktail-list">
+
+  <ul>
+    <li class="cocktail-list__item" *ngFor="let cocktail of cocktails" [class.selected]="cocktail === selectedCocktail"
+      (click)="onSelect(cocktail)">
+      <span class="cocktail-list__item-name">{{cocktail.name}}</span>
+    </li>
+  </ul>
+</div>
+
+<div class="cocktails-list__details" *ngIf="selectedCocktail">
+
   <h2>{{selectedCocktail.name | uppercase}} Details</h2>
-  <div><span>id: </span>{{selectedCocktail.id}}</div>
+  <!-- <div><span>id: </span>{{selectedCocktail.id}}</div> -->
   <div>
-    <label>name:
-      <input [(ngModel)]="selectedCocktail.name" placeholder="name">
-    </label>
+    <span>Name:</span>{{selectedCocktail.name}}
+    <ul>
+      <li *ngFor="let ingredient of selectedCocktail.ingredients">{{ingredient}}</li>
+    </ul>
+
   </div>
- 
+
 </div>
