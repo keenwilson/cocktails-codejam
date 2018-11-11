@@ -17,16 +17,30 @@
     padding: 40px 0px;
   
   }
+  .circle::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: pink;
+      opacity: 0.5;
+      z-index: 1;
+  }
 
-  .circle {
+.circle {
+    position: relative;
     border-radius: 1000px !important;
     overflow: hidden;
     width: 240px;
     height: 240px;
     border: 1px solid rgba(255, 255, 255, 0.7);
 }
+
 img {
     max-width: 100%;
+    filter: grayscale();
     height: auto;
     display: inline-block;
 }
