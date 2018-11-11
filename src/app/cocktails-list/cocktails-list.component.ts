@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Cocktail } from '../cocktail';
-//import { COCKTAILS } from '../mock-cocktails';
-import { CocktailService } from '../cocktail.service';
+import { COCKTAILS } from '../mock-cocktails';
+//import { CocktailService } from '../cocktail.service';
 
 @Component({
   selector: 'app-cocktails-list',
@@ -10,21 +10,21 @@ import { CocktailService } from '../cocktail.service';
 })
 export class CocktailsListComponent implements OnInit {
 
+  cocktails = COCKTAILS;
   selectedCocktail: Cocktail;
-  cocktails: Cocktail[];
- 
-  constructor(private cocktailService: CocktailService) { }
+  
+  
+
+  constructor() { }
  
   ngOnInit() {
-    this.getCocktails();
+    
   }
  
   onSelect(cocktail: Cocktail): void {
     this.selectedCocktail = cocktail;
   }
 
-  getCocktails(): void {
-    this.cocktailService.getCocktails();
-  }
+  
 
 }
