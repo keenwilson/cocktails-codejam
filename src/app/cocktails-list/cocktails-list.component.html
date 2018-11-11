@@ -10,12 +10,10 @@
 
 <div class="cocktails-list__details" *ngIf="selectedCocktail">
 
-  <h2>{{selectedCocktail.name | uppercase}} Details</h2>
-  <!-- <div><span>id: </span>{{selectedCocktail.id}}</div> -->
+  <h2 class="cocktails-list__details__title">{{selectedCocktail.name | uppercase}}</h2>
   <div>
-    <span>Name:</span>{{selectedCocktail.name}}
     <ul>
-      <li *ngFor="let ingredient of selectedCocktail.ingredients">{{ingredient}}</li>
+      <li class="cocktails-list__details__item" *ngFor="let ingredient of selectedCocktail.ingredients">{{ingredient}}</li>
     </ul>
 
   </div>
