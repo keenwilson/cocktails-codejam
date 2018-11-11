@@ -23,4 +23,8 @@ export class CocktailsListComponent implements OnInit {
     this.selectedCocktail = cocktail;
   }
 
+  getCocktails(): void {
+    this.cocktailService.getCocktails();
+  }
+
 }

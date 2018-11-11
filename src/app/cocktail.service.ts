@@ -14,5 +14,7 @@ export class CocktailService {
   constructor() { }
  
   
-  
+  getCocktails(): void {
+    //...
+  }
 }
