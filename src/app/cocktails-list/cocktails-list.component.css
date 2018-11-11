@@ -33,7 +33,14 @@
 .cocktail-list__item-name {
   position: relative;
   display: block;
+  color: #FFF;
+  cursor: pointer;
   /* z-index: 1; */
+}
+
+.cocktail-list__item-name:hover {
+  color: #DDDDDD;
+  text-decoration: none;
 }
 
 .cocktail-list__item:before, .cocktail-list__item:after{
@@ -64,4 +71,14 @@
   padding: 1em 4em;
   background-color: #666b8f;
   color: #FFF;
+}
+
+.cocktails-list__details__title {
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.cocktails-list__details__item {
+  text-align: center;
+  list-style: none;
 }
