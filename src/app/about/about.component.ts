@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
+  public amyImageUrl = "../../assets/profile-amy.png";
+  public callieImageUrl = "../../assets/profile-calliehart.jpg";
+  public keenImageUrl = "../../assets/profile-keen.jpg";
+  public melissaImageUrl = "../../assets/profile-melissa.png";
   constructor() { }
 
   ngOnInit() {
