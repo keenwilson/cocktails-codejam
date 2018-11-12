@@ -9,8 +9,15 @@
 </div>
 
 <div class="cocktails-list__details" *ngIf="selectedCocktail">
+    <h2 class="cocktails-list__details__title">{{selectedCocktail.name | uppercase}}</h2>
+<div class="row d-flex justify-content-center">
+  
+  <div class="circle">
+    <img class="profile-pic centered-and-cropped" src={{selectedCocktail.imageURL}} alt={{selectedCocktail.name}}>
+  </div>
+</div>
 
-  <h2 class="cocktails-list__details__title">{{selectedCocktail.name | uppercase}}</h2>
+  
   <div>
     <ul>
       <li class="cocktails-list__details__item" *ngFor="let ingredient of selectedCocktail.ingredients">{{ingredient}}</li>
