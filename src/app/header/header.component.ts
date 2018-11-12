@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  public logoImageUrl = require("./images/codingcocktailsbadge.png");
+  public logoImageUrl = "../../assets/codingcocktailsbadge.png";
   constructor() { }
  
   ngOnInit() {
