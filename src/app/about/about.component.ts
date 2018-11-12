@@ -12,4 +12,10 @@ export class AboutComponent implements OnInit {
   ngOnInit() {
   }
 
+  public amyImageUrl ="../../assets/profile-amy.png";
+  public callieImageUrl ="../../assets/profile-calliehart.jpg";
+  public keenImageUrl ="../../assets/images/profile-keen.jpg";
+  public melissaImageUrl ="../../assets/images/profile-mellissa.png";
+
+
 }
